@@ -20,12 +20,10 @@ import android.widget.TextView;
 public class alarm extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
-    ImageButton btnstop;
-    ImageView giraffeIcon;
 
-    ImageView a1,a2,a3,a4,a5,a6,a7,a8,a9;
+    //ImageView a1,a2,a3,a4,a5,a6,a7,a8,a9;
 
-    private int passNum = (int) (Math.random()*9+1);
+    //private int passNum = (int) (Math.random()*9+1);
 
 
 
@@ -34,12 +32,51 @@ public class alarm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
-        btnstop = (ImageButton) findViewById(R.id.alarmstop);
-        giraffeIcon = (ImageView) findViewById(R.id.giraffeIcon);
+        int passNum = (int) (Math.random()*9+1);
+
+        ImageButton btnstop = (ImageButton) findViewById(R.id.alarmstop);
+        ImageView giraffeIcon = (ImageView) findViewById(R.id.giraffeIcon);
 
 
-        numInit();
-        numShow();
+        ImageView a1 = (ImageView) findViewById(R.id.a1);
+        ImageView a2 = (ImageView) findViewById(R.id.a2);
+        ImageView a3 = (ImageView) findViewById(R.id.a3);
+        ImageView a4 = (ImageView) findViewById(R.id.a4);
+        ImageView a5 = (ImageView) findViewById(R.id.a5);
+        ImageView a6 = (ImageView) findViewById(R.id.a6);
+        ImageView a7 = (ImageView) findViewById(R.id.a7);
+        ImageView a8 = (ImageView) findViewById(R.id.a8);
+        ImageView a9 = (ImageView) findViewById(R.id.a9);
+
+        switch (passNum){
+            case 1:
+                a1.setVisibility(View.VISIBLE);
+                break;
+            case 2:
+                a2.setVisibility(View.VISIBLE);
+                break;
+            case 3:
+                a3.setVisibility(View.VISIBLE);
+                break;
+            case 4:
+                a4.setVisibility(View.VISIBLE);
+                break;
+            case 5:
+                a5.setVisibility(View.VISIBLE);
+                break;
+            case 6:
+                a6.setVisibility(View.VISIBLE);
+                break;
+            case 7:
+                a7.setVisibility(View.VISIBLE);
+                break;
+            case 8:
+                a8.setVisibility(View.VISIBLE);
+                break;
+            default:
+                a9.setVisibility(View.VISIBLE);
+                break;
+        }
 
         /*PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
         PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,"MyWakelockTag");
@@ -82,7 +119,7 @@ public class alarm extends AppCompatActivity {
         }
     }
 
-    private void numShow(){
+    /*private void numShow(){
         switch (passNum){
             case 1:
                 a1.setVisibility(View.VISIBLE);
@@ -112,9 +149,9 @@ public class alarm extends AppCompatActivity {
                 a9.setVisibility(View.VISIBLE);
                 break;
         }
-    }
+    }*/
 
-    private void numInit(){
+    /*private void numInit(){
         a1 = (ImageView) findViewById(R.id.a1);
         a2 = (ImageView) findViewById(R.id.a2);
         a3 = (ImageView) findViewById(R.id.a3);
@@ -125,14 +162,5 @@ public class alarm extends AppCompatActivity {
         a8 = (ImageView) findViewById(R.id.a8);
         a9 = (ImageView) findViewById(R.id.a9);
 
-        a1.setVisibility(View.GONE);
-        a2.setVisibility(View.GONE);
-        a3.setVisibility(View.GONE);
-        a4.setVisibility(View.GONE);
-        a5.setVisibility(View.GONE);
-        a6.setVisibility(View.GONE);
-        a7.setVisibility(View.GONE);
-        a8.setVisibility(View.GONE);
-        a9.setVisibility(View.GONE);
-    }
+    }*/
 }

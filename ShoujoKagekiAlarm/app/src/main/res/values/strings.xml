@@ -3,7 +3,7 @@
 
     <string name="hrefText"><a href = "https://github.com/narihira2000/shoujo-kageki-alarm">Github</a></string>
 
-    <string-array name="day">
+    <!--<string-array name="day">
         <item>　1　</item>
         <item>　2　</item>
         <item>　3　</item>
@@ -13,5 +13,5 @@
         <item>　7　</item>
         <item>　8　</item>
         <item>　9　</item>
-    </string-array>
+    </string-array>-->
 </resources>
