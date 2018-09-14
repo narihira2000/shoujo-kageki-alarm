@@ -32,7 +32,7 @@ public class alarm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
-        int passNum = (int) (Math.random()*9+1);
+        int passNum = (int) (Math.random()*8+1);
 
         ImageButton btnstop = (ImageButton) findViewById(R.id.alarmstop);
         ImageView giraffeIcon = (ImageView) findViewById(R.id.giraffeIcon);
@@ -45,8 +45,10 @@ public class alarm extends AppCompatActivity {
         ImageView a5 = (ImageView) findViewById(R.id.a5);
         ImageView a6 = (ImageView) findViewById(R.id.a6);
         ImageView a7 = (ImageView) findViewById(R.id.a7);
-        ImageView a8 = (ImageView) findViewById(R.id.a8);
-        ImageView a9 = (ImageView) findViewById(R.id.a9);
+        ImageView title = (ImageView) findViewById(R.id.imageView6);
+        ImageView lastday = (ImageView) findViewById(R.id.imageView7);
+//        ImageView a8 = (ImageView) findViewById(R.id.a8);
+//        ImageView a9 = (ImageView) findViewById(R.id.a9);
 
         switch (passNum){
             case 1:
@@ -70,11 +72,9 @@ public class alarm extends AppCompatActivity {
             case 7:
                 a7.setVisibility(View.VISIBLE);
                 break;
-            case 8:
-                a8.setVisibility(View.VISIBLE);
-                break;
             default:
-                a9.setVisibility(View.VISIBLE);
+                title.setVisibility(View.GONE);
+                lastday.setVisibility(View.VISIBLE);
                 break;
         }
 
