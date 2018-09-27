@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.PowerManager;
 import android.provider.Settings;
+import android.util.Log;
 
 public class soundAlarm extends BroadcastReceiver {
 
@@ -17,6 +18,12 @@ public class soundAlarm extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
+
+
+
+        Intent i = new Intent(context,alarm.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(i);
 
 
         /*String passNumString = intent.getStringExtra("passNum");

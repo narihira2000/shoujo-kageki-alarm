@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "185044378376",
+    "firebase_url": "https://shoujokagekialarm.firebaseio.com",
+    "project_id": "shoujokagekialarm",
+    "storage_bucket": "shoujokagekialarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185044378376:android:67671f038fcd6079",
+        "android_client_info": {
+          "package_name": "com.tsuyoshi.shoujokagekialarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185044378376-r6f37fcsktbf2gd81a6ijqg0uumu95bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tsuyoshi.shoujokagekialarm",
+            "certificate_hash": "ccab48954d14fc018e0c0804b95a1e50626b8186"
+          }
+        },
+        {
+          "client_id": "185044378376-qsvcd94n9l3slhhgrcs9j6n95dlboe7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtybodXmLLztfX8JDysB-uVtxERXSLLU0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185044378376-qsvcd94n9l3slhhgrcs9j6n95dlboe7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,6 +9,7 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
@@ -24,6 +25,7 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
@@ -32,6 +34,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.crashlytics.android.Crashlytics;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -63,10 +68,18 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView timeshow;
 
+    private FirebaseAnalytics mFirebaseAnalytics;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+
+
 
         Button btnSetClock = (Button) findViewById(R.id.setclock);
         Button btnStartClock = (Button) findViewById(R.id.startclock);
@@ -205,6 +218,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
     private void findUpdate(){
         if(newVersionCode > versionCode){
             new AlertDialog.Builder(MainActivity.this)
@@ -314,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setBtnStartClock(View view){
-        long triggerTime;
+        long triggerTime = 0;
         if(setClick==1){
             Calendar c = Calendar.getInstance();
             c.set(c.get(Calendar.YEAR),c.get(Calendar.MONTH),c.get(Calendar.DAY_OF_MONTH),c.get(Calendar.HOUR_OF_DAY),c.get(Calendar.MINUTE),0);
@@ -407,10 +422,10 @@ public class MainActivity extends AppCompatActivity {
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-        Intent intent = new Intent(this,alarm.class);
+        Intent intent = new Intent(this,soundAlarm.class);
 
-        /*Intent intent1 = new Intent(this,soundAlarm.class);
-        intent1.putExtra("passNum",passNum);*/
+        //Intent intent = new Intent(this,soundAlarm.class);
+        /*intent1.putExtra("passNum",passNum);*/
 
         //intent.setAction("WakeUp");
 
@@ -418,9 +433,17 @@ public class MainActivity extends AppCompatActivity {
         window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         window.addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);*/
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//        IntentFilter intentFilter = new IntentFilter();
+//        intentFilter.addAction("wake");
+//        registerReceiver(new soundAlarm(),intentFilter);
+//        Intent intent = new Intent();
+//        intent.setAction("wake");
 
-        alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        if (alarmManager != null) {
+            alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+        }
     }
 
 }
