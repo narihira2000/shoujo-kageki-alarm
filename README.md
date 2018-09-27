@@ -12,4 +12,4 @@
   - 要如何把MainActivity的資料傳到鈴響Activity還不知道，要找資料(應該已解決，暫時用不到)
   - ~~如果清掉程式後就不會響了~~ (已解決)
   - 不確定時間隔太久會不會被後台殺掉，測試10分鐘有響(經鄉民測試，不會被殺掉)
-  - sony z3 會有out of memory問題
+  - sony z3 & LG V10 會有out of memory問題
