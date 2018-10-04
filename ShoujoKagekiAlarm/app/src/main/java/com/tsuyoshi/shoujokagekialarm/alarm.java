@@ -63,39 +63,39 @@ public class alarm extends AppCompatActivity {
         ImageView giraffeIcon = (ImageView) findViewById(R.id.giraffeIcon);
 
 
-        ImageView aa1 = (ImageView) findViewById(R.id.aa1);
-        ImageView aa2 = (ImageView) findViewById(R.id.aa2);
-        ImageView aa3 = (ImageView) findViewById(R.id.aa3);
-        ImageView aa4 = (ImageView) findViewById(R.id.aa4);
-        ImageView aa5 = (ImageView) findViewById(R.id.aa5);
-        ImageView aa6 = (ImageView) findViewById(R.id.aa6);
-        ImageView aa7 = (ImageView) findViewById(R.id.aa7);
-        ImageView lastdayyyy = (ImageView) findViewById(R.id.lastdayyyy);
+
+
+
+        ImageView image = (ImageView) findViewById(R.id.aa1);
+
+
+
+
 
         switch (passNum){
             case 1:
-                aa1.setVisibility(View.VISIBLE);
                 break;
             case 2:
-                aa2.setVisibility(View.VISIBLE);
+
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa2));
                 break;
             case 3:
-                aa3.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa3));
                 break;
             case 4:
-                aa4.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa4));
                 break;
             case 5:
-                aa5.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa5));
                 break;
             case 6:
-                aa6.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa6));
                 break;
             case 7:
-                aa7.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.aa7));
                 break;
             default:
-                lastdayyyy.setVisibility(View.VISIBLE);
+                image.setImageDrawable(getResources().getDrawable(R.drawable.lastdayyyyy));
                 break;
         }
 

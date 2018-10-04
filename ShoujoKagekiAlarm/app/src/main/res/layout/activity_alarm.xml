@@ -59,102 +59,102 @@
                 android:layout_height="54dp"
                 android:layout_marginTop="20dp"
                 android:contentDescription="@+string/aa1"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/aa1" />
 
-            <ImageView
-                android:id="@+id/aa2"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa1"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa2" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa1"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa1"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa2" />-->
 
-            <ImageView
-                android:id="@+id/aa3"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa2"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa3" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa2"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa2"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa3" />-->
 
-            <ImageView
-                android:id="@+id/aa4"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa3"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa4" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa3"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa3"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa4" />-->
 
-            <ImageView
-                android:id="@+id/aa5"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa4"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa5" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa4"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa4"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa5" />-->
 
-            <ImageView
-                android:id="@+id/aa6"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa5"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa6" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa5"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa5"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa6" />-->
 
-            <ImageView
-                android:id="@+id/aa7"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa6"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa6"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/aa7" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aa7"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa6"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa6"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/aa7" />-->
 
-            <ImageView
-                android:id="@+id/lastdayyyy"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/aa7"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/aa7"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/lastdayyyyy" />
+            <!--<ImageView-->
+                <!--android:id="@+id/lastdayyyy"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/aa7"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/aa7"-->
+                <!--app:layout_constraintVertical_bias="0.0"-->
+                <!--app:srcCompat="@drawable/lastdayyyyy" />-->
 
             <!--<ImageView-->
                 <!--android:id="@+id/a1"-->
