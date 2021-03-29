@@ -3,6 +3,8 @@
 
 download link:https://goo.gl/96eNpV
 
+![](https://imgur.com/pGfGI0Y.gif)
+
 ## English Version
 
 ### features:
